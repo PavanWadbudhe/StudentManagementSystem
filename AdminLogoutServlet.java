@@ -15,6 +15,7 @@ public class AdminLogoutServlet extends HttpServlet{
 			pw.println("Session Expired...");
 		}else {
 			hs.removeAttribute("ab");
+			hs.removeAttribute("al");
 			hs.invalidate();
 			pw.println("Logged out Successfully...<br>");
 			req.getRequestDispatcher("home.html").include(req, res);
