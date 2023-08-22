@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Student Registration form</title>
+<title>Insert title here</title>
+<link rel='stylesheet' href='form-validation.css' type='text/css' />
+<script src="form-validation.js"></script>
+</head>
+<body onload="document.registration.rno.focus();">
+		<h1>Student Details</h1>
+	
+		<form action="addstu" method="post" name="registration"	onsubmit="return formValidation();">
+			<ul>
+				<li><label for="rno">RollNo :</label></li>
+				<li><input type="text" name="rno" size="10" /></li>
+				<li><label for="sname">StudentName :</label></li>
+				<li><input type="text" name="sname" /></li>
+				<li><label for="br">Branch :</label></li>
+				<li><select name="br">
+						<option selected="" value="Default">(Select Branch)</option>
+						<option value="Mechanical">Mechanical</option>
+						<option value="Electrical">Electrical</option>
+						<option value="Electronic & Teli">Electronic & Teli</option>
+						<option value="Computer Science">Computer Science</option>
+						<option value="Civil">Civil</option>
+				</select></li>
+	
+		<h2>Sub Marks</h2>
+				<li><label for="mar">Marathi</label></li>
+				<li><input type="text" name="mar" /></li>
+				<li><label for="hindi">Hindi</label></li>
+				<li><input type="text" name="hindi" /></li>
+				<li><label for="eng">English</label></li>
+				<li><input type="text" name="eng" /></li>
+				<li><label for="math">Math</label></li>
+				<li><input type="text" name="math" /></li>
+				<li><label for="sci">Sciench</label></li>
+				<li><input type="text" name="sci" /></li>
+				<li><label for="sosci">So-Science</label></li>
+				<li><input type="text" name="sosci" /></li>
+				<li><input type="submit" name="submit" value="Submit" /></li>
+		   </ul>
+		   
+		</form>
+</body>
+</html>
