@@ -28,7 +28,11 @@
 	width:300px;
 	height:300px;
 }	
-
+table tr td {
+	border:1px solid;
+	display: tabel-cell;
+	
+ }
 </style>
 </head>
 <body>
@@ -45,7 +49,11 @@
 			 		if(sb.getRollNo().equals(sb1.getRollNo())){
 	%>
 	<div class="c1">
+			<div style="text-align:center">
+	    	    <h2>Students Details</h2>
+	    	 </div>
 	   <div class="c2">
+	   
 			 	<table>
 			  			<tr>
 			  				<td>RollNo</td>
@@ -65,7 +73,11 @@
 			  			</tr>  			
 			  	</table>
 	    	</div>
+	    	 <div>
+	    	    <h2 style="text-align:center">Students Marks</h2>
+	    	 </div>
 			 <div class="c3">
+			
 		 		<table>
 			  			<tr>
 			  				<td>RollNo</td>
